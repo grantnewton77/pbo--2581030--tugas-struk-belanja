@@ -28,11 +28,21 @@ public class Main {
         int jumlah2 = input.nextInt();
         input.nextLine();
 
+        System.out.print("Nama barang 3 : ");
+        String namaBarang3 = input.nextLine();
+
+        System.out.print("Harga satuan  : ");
+        int harga3 = input.nextInt();
+
+        System.out.print("Jumlah        : ");
+        int jumlah3 = input.nextInt();
+
 
         int subtotal1 = harga1 * jumlah1;
         int subtotal2 = harga2 * jumlah2;
+        int subtotal3 = harga3 * jumlah3;
 
-        int totalBelanja = subtotal1 + subtotal2;
+        int totalBelanja = subtotal1 + subtotal2 + + subtotal3;
 
         System.out.print("Uang dibayar  : ");
         int uangDibayar = input.nextInt();
@@ -45,6 +55,7 @@ public class Main {
 
         System.out.println(namaBarang1 + "  " + jumlah1 + " x " + harga1 + " = " + subtotal1);
         System.out.println(namaBarang2 + "  " + jumlah2 + " x " + harga2 + " = " + subtotal2);
+        System.out.println(namaBarang3 + "  " + jumlah3 + " x " + harga3 + " = " + subtotal3);
 
         System.out.println("-------------------------");
         System.out.println("Total belanja = " + totalBelanja);
