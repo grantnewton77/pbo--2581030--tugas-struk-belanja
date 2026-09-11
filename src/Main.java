@@ -18,19 +18,33 @@ public class Main {
         int jumlah1 = input.nextInt();
         input.nextLine();
 
-        int subtotal1 = harga1 * jumlah1;
+        System.out.print("Nama barang 2 : ");
+        String namaBarang2 = input.nextLine();
 
-        int totalBelanja = subtotal1;
+        System.out.print("Harga satuan  : ");
+        int harga2 = input.nextInt();
+
+        System.out.print("Jumlah        : ");
+        int jumlah2 = input.nextInt();
+        input.nextLine();
+
+
+        int subtotal1 = harga1 * jumlah1;
+        int subtotal2 = harga2 * jumlah2;
+
+        int totalBelanja = subtotal1 + subtotal2;
 
         System.out.print("Uang dibayar  : ");
         int uangDibayar = input.nextInt();
 
         int kembalian = uangDibayar - totalBelanja;
 
+
         System.out.println();
         System.out.println("===== STRUK BELANJA =====");
 
         System.out.println(namaBarang1 + "  " + jumlah1 + " x " + harga1 + " = " + subtotal1);
+        System.out.println(namaBarang2 + "  " + jumlah2 + " x " + harga2 + " = " + subtotal2);
 
         System.out.println("-------------------------");
         System.out.println("Total belanja = " + totalBelanja);
